@@ -1,0 +1,28 @@
+#### デフォルト設定
+# ghostty +show-config --default --docs
+# そのまま書き込み
+# ghostty +show-config --default --docs > ~/.config/ghostty/config
+
+##### テーマ #####
+# ghostty +list-themes
+theme = Night Owl
+
+##### 文字色 ##### 
+
+# VSCode 系でよくある文字色
+# foreground = #ffffff
+
+# 暗めのグレー
+# background = 1e1e1e
+
+background = 252526
+foreground = d4d4d4
+
+##### カラーパレット #####
+palette = 7=#d4d4d4
+palette = 0=#1e1e1e
+
+##### キーバインド #####
+# cmd+enter の既定バインドを潰す（何もしない）
+#keybind = super+enter=
+keybind = shift+enter=text:\x1b\r
