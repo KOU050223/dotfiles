@@ -1,0 +1,194 @@
+{
+  "version": 2,
+  "plugins": {
+    "security-guidance@claude-code-plugins": [
+      {
+        "scope": "user",
+        "installPath": "/Users/uozumikouhei/.claude/plugins/cache/claude-code-plugins/security-guidance/1.0.0",
+        "version": "1.0.0",
+        "installedAt": "2025-12-07T12:35:53.267Z",
+        "lastUpdated": "2025-12-07T12:35:53.267Z",
+        "gitCommitSha": "cbc55b7d5491987135f57c87f033178d057f10e0"
+      }
+    ],
+    "claude-opus-4-5-migration@claude-code-plugins": [
+      {
+        "scope": "user",
+        "installPath": "/Users/uozumikouhei/.claude/plugins/cache/claude-code-plugins/claude-opus-4-5-migration/1.0.0",
+        "version": "1.0.0",
+        "installedAt": "2025-12-07T12:35:53.267Z",
+        "lastUpdated": "2025-12-07T12:35:53.267Z",
+        "gitCommitSha": "cbc55b7d5491987135f57c87f033178d057f10e0"
+      }
+    ],
+    "code-review@claude-code-plugins": [
+      {
+        "scope": "user",
+        "installPath": "/Users/uozumikouhei/.claude/plugins/cache/claude-code-plugins/code-review/1.0.0",
+        "version": "1.0.0",
+        "installedAt": "2025-12-07T12:35:53.267Z",
+        "lastUpdated": "2025-12-07T12:35:53.267Z",
+        "gitCommitSha": "cbc55b7d5491987135f57c87f033178d057f10e0"
+      }
+    ],
+    "commit-commands@claude-code-plugins": [
+      {
+        "scope": "user",
+        "installPath": "/Users/uozumikouhei/.claude/plugins/cache/claude-code-plugins/commit-commands/1.0.0",
+        "version": "1.0.0",
+        "installedAt": "2025-12-07T12:35:53.267Z",
+        "lastUpdated": "2025-12-07T12:35:53.267Z",
+        "gitCommitSha": "cbc55b7d5491987135f57c87f033178d057f10e0"
+      }
+    ],
+    "feature-dev@claude-code-plugins": [
+      {
+        "scope": "user",
+        "installPath": "/Users/uozumikouhei/.claude/plugins/cache/claude-code-plugins/feature-dev/1.0.0",
+        "version": "1.0.0",
+        "installedAt": "2025-12-07T12:35:53.267Z",
+        "lastUpdated": "2025-12-07T12:35:53.267Z",
+        "gitCommitSha": "cbc55b7d5491987135f57c87f033178d057f10e0"
+      }
+    ],
+    "frontend-design@claude-code-plugins": [
+      {
+        "scope": "user",
+        "installPath": "/Users/uozumikouhei/.claude/plugins/cache/claude-code-plugins/frontend-design/1.0.0",
+        "version": "1.0.0",
+        "installedAt": "2025-12-07T12:35:53.267Z",
+        "lastUpdated": "2025-12-07T12:35:53.267Z",
+        "gitCommitSha": "cbc55b7d5491987135f57c87f033178d057f10e0"
+      }
+    ],
+    "hookify@claude-code-plugins": [
+      {
+        "scope": "user",
+        "installPath": "/Users/uozumikouhei/.claude/plugins/cache/claude-code-plugins/hookify/0.1.0",
+        "version": "0.1.0",
+        "installedAt": "2025-12-07T12:35:53.267Z",
+        "lastUpdated": "2025-12-07T12:35:53.267Z",
+        "gitCommitSha": "cbc55b7d5491987135f57c87f033178d057f10e0"
+      }
+    ],
+    "plugin-dev@claude-code-plugins": [
+      {
+        "scope": "user",
+        "installPath": "/Users/uozumikouhei/.claude/plugins/cache/claude-code-plugins/plugin-dev/0.1.0",
+        "version": "0.1.0",
+        "installedAt": "2025-12-07T12:35:53.267Z",
+        "lastUpdated": "2025-12-24T13:54:06.536Z",
+        "gitCommitSha": "cbc55b7d5491987135f57c87f033178d057f10e0"
+      }
+    ],
+    "pr-review-toolkit@claude-code-plugins": [
+      {
+        "scope": "user",
+        "installPath": "/Users/uozumikouhei/.claude/plugins/cache/claude-code-plugins/pr-review-toolkit/1.0.0",
+        "version": "1.0.0",
+        "installedAt": "2025-12-07T12:35:53.267Z",
+        "lastUpdated": "2025-12-07T12:35:53.267Z",
+        "gitCommitSha": "cbc55b7d5491987135f57c87f033178d057f10e0"
+      }
+    ],
+    "ralph-wiggum@claude-code-plugins": [
+      {
+        "scope": "user",
+        "installPath": "/Users/uozumikouhei/.claude/plugins/cache/claude-code-plugins/ralph-wiggum/1.0.0",
+        "version": "1.0.0",
+        "installedAt": "2025-12-07T12:35:53.267Z",
+        "lastUpdated": "2025-12-07T12:35:53.267Z",
+        "gitCommitSha": "cbc55b7d5491987135f57c87f033178d057f10e0"
+      }
+    ],
+    "gopls-lsp@claude-plugins-official": [
+      {
+        "scope": "user",
+        "installPath": "/Users/uozumikouhei/.claude/plugins/cache/claude-plugins-official/gopls-lsp/1.0.0",
+        "version": "1.0.0",
+        "installedAt": "2026-01-02T13:13:38.837Z",
+        "lastUpdated": "2026-01-02T13:13:38.837Z"
+      }
+    ],
+    "code-simplifier@claude-plugins-official": [
+      {
+        "scope": "user",
+        "installPath": "/Users/uozumikouhei/.claude/plugins/cache/claude-plugins-official/code-simplifier/1.0.0",
+        "version": "1.0.0",
+        "installedAt": "2026-01-10T09:51:16.500Z",
+        "lastUpdated": "2026-01-10T09:51:16.500Z"
+      }
+    ],
+    "coderabbit@claude-plugins-official": [
+      {
+        "scope": "project",
+        "projectPath": "/Users/uozumikouhei/workspace/Jyogi_navi",
+        "installPath": "/Users/uozumikouhei/.claude/plugins/cache/claude-plugins-official/coderabbit/1.0.0",
+        "version": "1.0.0",
+        "installedAt": "2026-03-15T12:45:11.347Z",
+        "lastUpdated": "2026-03-15T12:45:11.347Z",
+        "gitCommitSha": "51651e86d8d71e150e13313f43298f212abb47db"
+      }
+    ],
+    "using-cmux@hummer98-using-cmux": [
+      {
+        "scope": "user",
+        "installPath": "/Users/uozumikouhei/.claude/plugins/cache/hummer98-using-cmux/using-cmux/1.2.0",
+        "version": "1.2.0",
+        "installedAt": "2026-03-23T18:19:02.802Z",
+        "lastUpdated": "2026-03-23T18:19:02.802Z",
+        "gitCommitSha": "e7af2623a6f5aaa0038e5cd4d1ee73fa20a63c28"
+      }
+    ],
+    "typescript-lsp@claude-plugins-official": [
+      {
+        "scope": "user",
+        "installPath": "/Users/uozumikouhei/.claude/plugins/cache/claude-plugins-official/typescript-lsp/1.0.0",
+        "version": "1.0.0",
+        "installedAt": "2026-03-23T18:23:05.978Z",
+        "lastUpdated": "2026-03-23T18:23:05.978Z",
+        "gitCommitSha": "61c0597779bd2d670dcd4fbbf37c66aa19eb2ce6"
+      }
+    ],
+    "elixir-ls-lsp@claude-plugins-official": [
+      {
+        "scope": "user",
+        "installPath": "/Users/uozumikouhei/.claude/plugins/cache/claude-plugins-official/elixir-ls-lsp/1.0.0",
+        "version": "1.0.0",
+        "installedAt": "2026-03-23T18:23:38.674Z",
+        "lastUpdated": "2026-03-23T18:23:38.674Z",
+        "gitCommitSha": "806a6eeeb88b9a306a59b3212a1d5d88aa5c70af"
+      }
+    ],
+    "pyright-lsp@claude-plugins-official": [
+      {
+        "scope": "user",
+        "installPath": "/Users/uozumikouhei/.claude/plugins/cache/claude-plugins-official/pyright-lsp/1.0.0",
+        "version": "1.0.0",
+        "installedAt": "2026-03-23T18:24:11.361Z",
+        "lastUpdated": "2026-03-23T18:24:11.361Z",
+        "gitCommitSha": "61c0597779bd2d670dcd4fbbf37c66aa19eb2ce6"
+      }
+    ],
+    "csharp-lsp@claude-plugins-official": [
+      {
+        "scope": "user",
+        "installPath": "/Users/uozumikouhei/.claude/plugins/cache/claude-plugins-official/csharp-lsp/1.0.0",
+        "version": "1.0.0",
+        "installedAt": "2026-03-23T18:24:11.375Z",
+        "lastUpdated": "2026-03-23T18:24:11.375Z",
+        "gitCommitSha": "61c0597779bd2d670dcd4fbbf37c66aa19eb2ce6"
+      }
+    ],
+    "php-lsp@claude-plugins-official": [
+      {
+        "scope": "user",
+        "installPath": "/Users/uozumikouhei/.claude/plugins/cache/claude-plugins-official/php-lsp/1.0.0",
+        "version": "1.0.0",
+        "installedAt": "2026-03-23T18:24:11.394Z",
+        "lastUpdated": "2026-03-23T18:24:11.394Z",
+        "gitCommitSha": "61c0597779bd2d670dcd4fbbf37c66aa19eb2ce6"
+      }
+    ]
+  }
+}

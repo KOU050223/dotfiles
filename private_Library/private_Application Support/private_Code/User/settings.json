@@ -1,0 +1,242 @@
+{
+  "[dart]": {
+    "editor.formatOnSave": true,
+    "editor.formatOnType": true,
+    "editor.rulers": [
+      80
+    ],
+    "editor.selectionHighlight": false,
+    "editor.tabCompletion": "onlySnippets",
+    "editor.wordBasedSuggestions": "off"
+  },
+  "[dockercompose]": {
+    "editor.autoIndent": "advanced",
+    "editor.defaultFormatter": "redhat.vscode-yaml",
+    "editor.insertSpaces": true,
+    "editor.quickSuggestions": {
+      "comments": false,
+      "other": true,
+      "strings": true
+    },
+    "editor.tabSize": 2
+  },
+  "[github-actions-workflow]": {
+    "editor.defaultFormatter": "redhat.vscode-yaml"
+  },
+  "[html]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+  },
+  "[javascript]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+  },
+  "[javascriptreact]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+  },
+  "[jsonc]": {
+    "editor.defaultFormatter": "vscode.json-language-features"
+  },
+  "[markdown]": {
+    "editor.defaultFormatter": "yzhang.markdown-all-in-one"
+  },
+  "[typescript]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+  },
+  "[typescriptreact]": {
+    "editor.defaultFormatter": "vscode.typescript-language-features"
+  },
+  "[yaml]": {
+    "editor.defaultFormatter": "redhat.vscode-yaml"
+  },
+  "azureTerraform.survey": {
+    "surveyPromptDate": "2025-08-09T03:00:33.562Z",
+    "surveyPromptIgnoredCount": 1
+  },
+  "backgroundCover.blur": 0,
+  "backgroundCover.imagePath": "/Users/uozumikouhei/Downloads/sozai/うさこkiyo.png",
+  "backgroundCover.opacity": 0.05,
+  "chat.instructionsFilesLocations": {
+    ".github/instructions": true,
+    ".claude/rules": true,
+    "~/.copilot/instructions": true,
+    "~/.claude/rules": true,
+    "/var/folders/bh/4254dpss119fm90l2z_tq7kc0000gn/T/postman-collections-post-response.instructions.md": true,
+    "/var/folders/bh/4254dpss119fm90l2z_tq7kc0000gn/T/postman-collections-pre-request.instructions.md": true,
+    "/var/folders/bh/4254dpss119fm90l2z_tq7kc0000gn/T/postman-folder-post-response.instructions.md": true,
+    "/var/folders/bh/4254dpss119fm90l2z_tq7kc0000gn/T/postman-folder-pre-request.instructions.md": true,
+    "/var/folders/bh/4254dpss119fm90l2z_tq7kc0000gn/T/postman-http-request-post-response.instructions.md": true,
+    "/var/folders/bh/4254dpss119fm90l2z_tq7kc0000gn/T/postman-http-request-pre-request.instructions.md": true,
+    "C:\\Users\\kouhe\\AppData\\Local\\Temp\\postman-collections-post-response.instructions.md": true,
+    "C:\\Users\\kouhe\\AppData\\Local\\Temp\\postman-collections-pre-request.instructions.md": true,
+    "C:\\Users\\kouhe\\AppData\\Local\\Temp\\postman-folder-post-response.instructions.md": true,
+    "C:\\Users\\kouhe\\AppData\\Local\\Temp\\postman-folder-pre-request.instructions.md": true,
+    "C:\\Users\\kouhe\\AppData\\Local\\Temp\\postman-http-request-post-response.instructions.md": true,
+    "C:\\Users\\kouhe\\AppData\\Local\\Temp\\postman-http-request-pre-request.instructions.md": true,
+    "/var/folders/bh/4254dpss119fm90l2z_tq7kc0000gn/T/nix-shell.uSQQHc/postman-collections-post-response.instructions.md": true,
+    "/var/folders/bh/4254dpss119fm90l2z_tq7kc0000gn/T/nix-shell.uSQQHc/postman-collections-pre-request.instructions.md": true,
+    "/var/folders/bh/4254dpss119fm90l2z_tq7kc0000gn/T/nix-shell.uSQQHc/postman-folder-post-response.instructions.md": true,
+    "/var/folders/bh/4254dpss119fm90l2z_tq7kc0000gn/T/nix-shell.uSQQHc/postman-folder-pre-request.instructions.md": true,
+    "/var/folders/bh/4254dpss119fm90l2z_tq7kc0000gn/T/nix-shell.uSQQHc/postman-http-request-post-response.instructions.md": true,
+    "/var/folders/bh/4254dpss119fm90l2z_tq7kc0000gn/T/nix-shell.uSQQHc/postman-http-request-pre-request.instructions.md": true,
+    "/var/folders/bh/4254dpss119fm90l2z_tq7kc0000gn/T/nix-shell.CQbRll/postman-collections-post-response.instructions.md": true,
+    "/var/folders/bh/4254dpss119fm90l2z_tq7kc0000gn/T/nix-shell.CQbRll/postman-collections-pre-request.instructions.md": true,
+    "/var/folders/bh/4254dpss119fm90l2z_tq7kc0000gn/T/nix-shell.CQbRll/postman-folder-post-response.instructions.md": true,
+    "/var/folders/bh/4254dpss119fm90l2z_tq7kc0000gn/T/nix-shell.CQbRll/postman-folder-pre-request.instructions.md": true,
+    "/var/folders/bh/4254dpss119fm90l2z_tq7kc0000gn/T/nix-shell.CQbRll/postman-http-request-post-response.instructions.md": true,
+    "/var/folders/bh/4254dpss119fm90l2z_tq7kc0000gn/T/nix-shell.CQbRll/postman-http-request-pre-request.instructions.md": true,
+    "/var/folders/bh/4254dpss119fm90l2z_tq7kc0000gn/T/nix-shell.hEjLj5/postman-collections-post-response.instructions.md": true,
+    "/var/folders/bh/4254dpss119fm90l2z_tq7kc0000gn/T/nix-shell.hEjLj5/postman-collections-pre-request.instructions.md": true,
+    "/var/folders/bh/4254dpss119fm90l2z_tq7kc0000gn/T/nix-shell.hEjLj5/postman-folder-post-response.instructions.md": true,
+    "/var/folders/bh/4254dpss119fm90l2z_tq7kc0000gn/T/nix-shell.hEjLj5/postman-folder-pre-request.instructions.md": true,
+    "/var/folders/bh/4254dpss119fm90l2z_tq7kc0000gn/T/nix-shell.hEjLj5/postman-http-request-post-response.instructions.md": true,
+    "/var/folders/bh/4254dpss119fm90l2z_tq7kc0000gn/T/nix-shell.hEjLj5/postman-http-request-pre-request.instructions.md": true,
+    "/var/folders/bh/4254dpss119fm90l2z_tq7kc0000gn/T/nix-shell.s49WXL/postman-collections-post-response.instructions.md": true,
+    "/var/folders/bh/4254dpss119fm90l2z_tq7kc0000gn/T/nix-shell.s49WXL/postman-collections-pre-request.instructions.md": true,
+    "/var/folders/bh/4254dpss119fm90l2z_tq7kc0000gn/T/nix-shell.s49WXL/postman-folder-post-response.instructions.md": true,
+    "/var/folders/bh/4254dpss119fm90l2z_tq7kc0000gn/T/nix-shell.s49WXL/postman-folder-pre-request.instructions.md": true,
+    "/var/folders/bh/4254dpss119fm90l2z_tq7kc0000gn/T/nix-shell.s49WXL/postman-http-request-post-response.instructions.md": true,
+    "/var/folders/bh/4254dpss119fm90l2z_tq7kc0000gn/T/nix-shell.s49WXL/postman-http-request-pre-request.instructions.md": true,
+    "/var/folders/bh/4254dpss119fm90l2z_tq7kc0000gn/T/nix-shell.YKgdqr/postman-collections-post-response.instructions.md": true,
+    "/var/folders/bh/4254dpss119fm90l2z_tq7kc0000gn/T/nix-shell.YKgdqr/postman-collections-pre-request.instructions.md": true,
+    "/var/folders/bh/4254dpss119fm90l2z_tq7kc0000gn/T/nix-shell.YKgdqr/postman-folder-post-response.instructions.md": true,
+    "/var/folders/bh/4254dpss119fm90l2z_tq7kc0000gn/T/nix-shell.YKgdqr/postman-folder-pre-request.instructions.md": true,
+    "/var/folders/bh/4254dpss119fm90l2z_tq7kc0000gn/T/nix-shell.YKgdqr/postman-http-request-post-response.instructions.md": true,
+    "/var/folders/bh/4254dpss119fm90l2z_tq7kc0000gn/T/nix-shell.YKgdqr/postman-http-request-pre-request.instructions.md": true,
+    "/var/folders/bh/4254dpss119fm90l2z_tq7kc0000gn/T/nix-shell.gL6k1e/postman-collections-post-response.instructions.md": true,
+    "/var/folders/bh/4254dpss119fm90l2z_tq7kc0000gn/T/nix-shell.gL6k1e/postman-collections-pre-request.instructions.md": true,
+    "/var/folders/bh/4254dpss119fm90l2z_tq7kc0000gn/T/nix-shell.gL6k1e/postman-folder-post-response.instructions.md": true,
+    "/var/folders/bh/4254dpss119fm90l2z_tq7kc0000gn/T/nix-shell.gL6k1e/postman-folder-pre-request.instructions.md": true,
+    "/var/folders/bh/4254dpss119fm90l2z_tq7kc0000gn/T/nix-shell.gL6k1e/postman-http-request-post-response.instructions.md": true,
+    "/var/folders/bh/4254dpss119fm90l2z_tq7kc0000gn/T/nix-shell.gL6k1e/postman-http-request-pre-request.instructions.md": true,
+    "/var/folders/bh/4254dpss119fm90l2z_tq7kc0000gn/T/nix-shell.je0HqO/postman-collections-post-response.instructions.md": true,
+    "/var/folders/bh/4254dpss119fm90l2z_tq7kc0000gn/T/nix-shell.je0HqO/postman-collections-pre-request.instructions.md": true,
+    "/var/folders/bh/4254dpss119fm90l2z_tq7kc0000gn/T/nix-shell.je0HqO/postman-folder-post-response.instructions.md": true,
+    "/var/folders/bh/4254dpss119fm90l2z_tq7kc0000gn/T/nix-shell.je0HqO/postman-folder-pre-request.instructions.md": true,
+    "/var/folders/bh/4254dpss119fm90l2z_tq7kc0000gn/T/nix-shell.je0HqO/postman-http-request-post-response.instructions.md": true,
+    "/var/folders/bh/4254dpss119fm90l2z_tq7kc0000gn/T/nix-shell.je0HqO/postman-http-request-pre-request.instructions.md": true,
+    "/var/folders/bh/4254dpss119fm90l2z_tq7kc0000gn/T/nix-shell.A01NVK/postman-collections-post-response.instructions.md": true,
+    "/var/folders/bh/4254dpss119fm90l2z_tq7kc0000gn/T/nix-shell.A01NVK/postman-collections-pre-request.instructions.md": true,
+    "/var/folders/bh/4254dpss119fm90l2z_tq7kc0000gn/T/nix-shell.A01NVK/postman-folder-post-response.instructions.md": true,
+    "/var/folders/bh/4254dpss119fm90l2z_tq7kc0000gn/T/nix-shell.A01NVK/postman-folder-pre-request.instructions.md": true,
+    "/var/folders/bh/4254dpss119fm90l2z_tq7kc0000gn/T/nix-shell.A01NVK/postman-http-request-post-response.instructions.md": true,
+    "/var/folders/bh/4254dpss119fm90l2z_tq7kc0000gn/T/nix-shell.A01NVK/postman-http-request-pre-request.instructions.md": true
+  },
+  "cline.preferredLanguage": "Japanese - 日本語",
+  "database-client.autoSync": true,
+  "diffEditor.ignoreTrimWhitespace": false,
+  "diffEditor.wordWrap": "off",
+  "docker.extension.enableComposeLanguageServer": false,
+  "editor.accessibilitySupport": "off",
+  "editor.experimental.asyncTokenization": true,
+  "editor.guides.bracketPairs": false,
+  "editor.guides.indentation": false,
+  "editor.inlayHints.enabled": "off",
+  "editor.unicodeHighlight.ambiguousCharacters": false,
+  "editor.unicodeHighlight.invisibleCharacters": false,
+"editor.wordWrap": "on",
+  "explorer.confirmDragAndDrop": false,
+  "files.associations": {
+    "*.md": "bat"
+  },
+  "files.watcherExclude": {
+    "/.cache/": true,
+    "/.git/objects/": true,
+    "/.git/subtree-cache/": true,
+    "/.next/": true,
+    "/node_modules/": true
+  },
+  "geminicodeassist.project": "ornate-racer-wjkxm",
+  "git.confirmSync": false,
+  "git.enableSmartCommit": true,
+  "github.copilot.chat.commitMessageGeneration.instructions": [
+    {
+      "text": "コミットルールに準拠し、日本語で簡潔に記述する"
+    },
+    {
+      "text": "コミットメッセージは50文字以内で、動詞の現在形を使用する"
+    },
+    {
+      "text": "コミットメッセージの最初の文字は小文字にする"
+    },
+    {
+      "text": "説明には日本語を使用し、英語は避ける"
+    },
+    {
+      "text": "コミットメッセージは過去形ではなく、現在形で記述する"
+    },
+    {
+      "text": "コミットメッセージの先頭に「feat:」「fix:」「docs:」などのプレフィックスを使用する"
+    },
+    {
+      "text": "コミットメッセージは一貫性を保ち、プロジェクト全体で同じスタイルを使用する"
+    },
+    {
+      "file": ".github/commit_rule.md"
+    }
+  ],
+  "github.copilot.nextEditSuggestions.enabled": true,
+  "go.toolsManagement.autoUpdate": true,
+  "hediet.vscode-drawio.resizeImages": null,
+  "hediet.vscode-drawio.theme": "atlas",
+  "javascript.format.insertSpaceBeforeAndAfterBinaryOperators": false,
+  "javascript.updateImportsOnFileMove.enabled": "never",
+  "markdown-preview-enhanced.enableScriptExecution": true,
+  "omnisharp.useModernNet": false,
+  "powermode.combo.counterEnabled": "show",
+  "powermode.combo.location": "statusbar",
+  "powermode.presets": "simple-rift",
+  "python.defaultInterpreterPath": "C:\\Users\\kouhe\\AppData\\Local\\Programs\\Python\\Python311\\python.exe",
+  "redhat.telemetry.enabled": true,
+  "remote.SSH.useLocalServer": true,
+  "remote.portsAttributes": {
+    "3000": {
+      "protocol": "https"
+    }
+  },
+  "security.workspace.trust.untrustedFiles": "open",
+  "terminal.integrated.env.osx": {
+    "Q_NEW_SESSION": "1"
+  },
+  "typescript.disableAutomaticTypeAcquisition": true,
+  "typescript.tsserver.experimental.enableProjectDiagnostics": false,
+  "typescript.tsserver.log": "off",
+  "typescript.updateImportsOnFileMove.enabled": "always",
+  "window.experimental.useGpuAcceleration": true,
+  "window.restoreWindows": "none",
+  "window.titleBarStyle": "native",
+  "workbench.colorCustomizations": {
+    "editor.lineHighlightBackground": "#1073cf2d",
+    "editor.lineHighlightBorder": "#9fced11f"
+  },
+  "workbench.editor.empty.hint": "hidden",
+  "workbench.editor.experimentalAutoLayout": false,
+  "workbench.iconTheme": "material-icon-theme",
+  "chat.mcp.gallery.enabled": true,
+  "geminicodeassist.displayInlineContextHint": false,
+  "gitlens.ai.model": "vscode",
+  "gitlens.ai.vscode.model": "copilot:gpt-4.1",
+  "terminal.integrated.suggest.windowsExecutableExtensions": {},
+  "markdown-preview-enhanced.enablePreviewZenMode": false,
+  "terminal.integrated.accessibleViewPreserveCursorPosition": true,
+  "claudeCode.preferredLocation": "panel",
+  "git.ignoreRebaseWarning": true,
+  "chat.viewSessions.orientation": "stacked",
+  "claudeCode.selectedModel": "opus",
+  "githubPullRequests.pullBranch": "never",
+  "godotTools.editorPath.godot4": "/Users/uozumikouhei/Applications/Godot.app",
+  "[csharp]": {
+    "editor.maxTokenizationLineLength": 2500
+  },
+  "haskell.manageHLS": "GHCup",
+  "terminal.integrated.allowedLinkSchemes": [
+    "file",
+    "http",
+    "https",
+    "mailto",
+    "vscode",
+    "vscode-insiders",
+    "apps/mobile/app/(auth)/sign-in.tsx"
+  ],
+  "terminal.integrated.enableImages": true,
+  "terminal.integrated.fontFamily": "'MesloLGS NF'",
+  "editor.fontFamily": "Menlo, Monaco, 'Courier New', monospace,'MesloLGS NF'"
+}
