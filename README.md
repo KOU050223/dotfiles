@@ -1,8 +1,102 @@
 # dotfiles
 
-[chezmoi](https://www.chezmoi.io/) で管理している個人のdotfilesです。
+[chezmoi](https://www.chezmoi.io/) + [nix-darwin](https://github.com/LnL7/nix-darwin) + [Home Manager](https://github.com/nix-community/home-manager) で管理している個人のdotfilesです。
+
+- **パッケージ管理**: nix-darwin + Home Manager
+- **dotfiles管理**: chezmoi（段階的にHome Managerへ移行予定）
+- **対象OS**: macOS (Apple Silicon)
+
+---
+
+## セットアップ（新しいマシン）
+
+### 1. Determinate Nix をインストール
+
+```bash
+curl --proto '=https' --tlsv1.2 -sSf -L https://install.determinate.systems/nix | sh -s -- install
+```
+
+インストール後、ターミナルを再起動する。
+
+### 2. dotfiles リポジトリを clone
+
+```bash
+git clone https://github.com/KOU050223/dotfiles.git ~/.local/share/chezmoi
+```
+
+### 3. nix-darwin + Home Manager を適用
+
+```bash
+sudo nix run nix-darwin -- switch --flake ~/.local/share/chezmoi/nix#uozumikouhei-mac
+```
+
+初回は10〜20分かかります。完了後、新しいターミナルを開く。
+
+### 4. chezmoi で dotfiles を適用
+
+```bash
+chezmoi apply
+```
+
+### 5. VSCode 拡張機能を一括インストール
+
+```bash
+cat ~/.local/share/chezmoi/vscode-extensions.txt | xargs -I {} code --install-extension {}
+```
+
+---
+
+## 日常的な使い方
+
+### パッケージを追加・変更する
+
+`nix/modules/home.nix` を編集して適用：
+
+```bash
+# home.nix を編集
+vim ~/.local/share/chezmoi/nix/modules/home.nix
+
+# 適用
+sudo darwin-rebuild switch --flake ~/.local/share/chezmoi/nix#uozumikouhei-mac
+```
+
+### macOS設定を変更する
+
+`nix/modules/darwin.nix` を編集して適用（上記と同じコマンド）。
+
+### dotfiles を編集・同期する
+
+```bash
+# ファイルを編集
+chezmoi edit ~/.zshrc
+
+# 適用
+chezmoi apply
+
+# GitHubに同期
+chezmoi cd && git add -A && git commit -m "update" && git push
+```
+
+### リモートの変更を取り込む
+
+```bash
+chezmoi update
+sudo darwin-rebuild switch --flake ~/.local/share/chezmoi/nix#uozumikouhei-mac
+```
+
+---
 
 ## 管理対象ファイル
+
+### nix（パッケージ・システム設定）
+
+| ファイル | 説明 |
+|----------|------|
+| `nix/flake.nix` | nixpkgs・nix-darwin・Home Manager のエントリ |
+| `nix/modules/darwin.nix` | nix-darwin システム設定（Dock, Finder, Homebrew Cask等） |
+| `nix/modules/home.nix` | Home Manager 設定（パッケージ一覧・zshrc・gitconfig等） |
+
+### chezmoi（dotfiles）
 
 | ファイル | 説明 |
 |----------|------|
@@ -16,98 +110,36 @@
 | `.agents/` | Claude エージェントスキル実体 |
 | `Library/Application Support/Code/User/settings.json` | VSCode 設定 |
 | `Library/Application Support/Code/User/keybindings.json` | VSCode キーバインド |
-| `.vscode/argv.json` | VSCode 起動引数 |
 | `vscode-extensions.txt` | VSCode 拡張機能一覧 |
-
-## セットアップ（新しいマシン）
-
-### 1. chezmoi インストール
-
-**macOS (Homebrew)**
-```bash
-brew install chezmoi
-```
-
-**Linux / その他**
-```bash
-sh -c "$(curl -fsLS get.chezmoi.io)"
-```
-
-### 2. dotfiles を適用
-
-```bash
-chezmoi init --apply https://github.com/KOU050223/dotfiles.git
-```
-
-これ1コマンドで clone → 適用まで完了します。
-
-### 3. VSCode 拡張機能を一括インストール
-
-```bash
-cat ~/.local/share/chezmoi/vscode-extensions.txt | xargs -I {} code --install-extension {}
-```
-
----
-
-## 日常的な使い方
-
-### ファイルを新たに管理対象に追加
-
-```bash
-chezmoi add ~/.vimrc
-```
-
-### 編集する
-
-```bash
-chezmoi edit ~/.zshrc
-```
-
-### 差分を確認する
-
-```bash
-chezmoi diff
-```
-
-### ホームディレクトリに適用する
-
-```bash
-chezmoi apply
-```
-
-### GitHubに同期する
-
-```bash
-chezmoi cd
-git add -A
-git commit -m "..."
-git push
-```
-
-または1行で：
-
-```bash
-chezmoi cd && git add -A && git commit -m "update dotfiles" && git push
-```
-
-### リモートの変更を取り込む
-
-```bash
-chezmoi update
-```
 
 ---
 
 ## ディレクトリ構成
 
-chezmoi のソースディレクトリは `~/.local/share/chezmoi/` です。
+```
+~/.local/share/chezmoi/   （= ~/workspace/dotfiles-nix はnix/へのシンボリックリンク）
+├── nix/
+│   ├── flake.nix
+│   ├── flake.lock
+│   └── modules/
+│       ├── darwin.nix
+│       └── home.nix
+├── dot_zshrc
+├── dot_gitconfig
+├── dot_config/
+│   ├── starship.toml
+│   └── ghostty/
+├── dot_claude/
+├── dot_agents/
+├── dot_vscode/
+├── private_Library/
+└── vscode-extensions.txt
+```
 
-ファイル名のプレフィックスルール：
+chezmoi のファイル名プレフィックスルール：
 
 | プレフィックス | 意味 |
 |----------------|------|
 | `dot_` | `.`（ドット）に変換される |
 | `executable_` | 実行権限が付与される |
 | `private_` | パーミッション 600 で作成される |
-
-例: `dot_zshrc` → `~/.zshrc`
