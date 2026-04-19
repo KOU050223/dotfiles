@@ -38,7 +38,13 @@ sudo nix run nix-darwin -- switch --flake ~/.local/share/chezmoi/nix#uozumikouhe
 chezmoi apply
 ```
 
-### 5. VSCode 拡張機能を一括インストール
+### 5. npmグローバルパッケージをインストール
+
+```bash
+npm install -g firebase-tools ccusage cloudflare-bulk-delete @qiita/qiita-cli cz-git czg @anthropic-ai/claude-code
+```
+
+### 6. VSCode 拡張機能を一括インストール
 
 ```bash
 cat ~/.local/share/chezmoi/vscode-extensions.txt | xargs -I {} code --install-extension {}
