@@ -41,7 +41,6 @@
     curl
     tmux
     neovim
-    zsh-syntax-highlighting
 
     # --- Git拡張 ---
     git-lfs
