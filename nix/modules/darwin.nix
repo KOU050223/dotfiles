@@ -19,8 +19,7 @@
     enable = true;
     onActivation = {
       autoUpdate = true;
-      cleanup = "zap"; # Nixで管理外のbrewパッケージを削除（移行完了後に有効化）
-      # cleanup = "none"; # 移行期間中はこちら（安全）
+      cleanup = "none";
     };
     brews = [
       # 移行後も brew で管理するもの（nixpkgsにないもの等）

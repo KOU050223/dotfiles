@@ -41,7 +41,8 @@
     curl
     tmux
     neovim
-
+    ni
+    
     # --- Git拡張 ---
     git-lfs
 
@@ -49,6 +50,10 @@
     starship
     chezmoi
   ];
+
+  # nixpkgsにないnpmグローバルパッケージ（nvmのv22で管理）
+  # 新しいマシンでは以下を実行:
+  # npm install -g firebase-tools ccusage cloudflare-bulk-delete @qiita/qiita-cli cz-git czg @anthropic-ai/claude-code
 
   programs.home-manager.enable = true;
 
