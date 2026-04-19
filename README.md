@@ -50,14 +50,31 @@ cat ~/.local/share/chezmoi/vscode-extensions.txt | xargs -I {} code --install-ex
 
 ### パッケージを追加・変更する
 
-`nix/modules/home.nix` を編集して適用：
+**1. パッケージ名を調べる**
 
 ```bash
-# home.nix を編集
-vim ~/.local/share/chezmoi/nix/modules/home.nix
+nix search nixpkgs パッケージ名
+```
 
+または https://search.nixos.org/packages で検索。
+
+**2. 何をどこに書くか**
+
+| 追加したいもの | 編集するファイル | 書く場所 |
+|----------------|-----------------|----------|
+| CLIツール（go, gh, jq等） | `home.nix` | `home.packages` |
+| シェル設定・エイリアス | `home.nix` | `programs.zsh.initContent` |
+| macOS GUIアプリ | `darwin.nix` | `homebrew.casks` |
+| nixpkgsにないCLIツール | `darwin.nix` | `homebrew.brews` |
+
+**3. 適用してGitHubに保存**
+
+```bash
 # 適用
 sudo darwin-rebuild switch --flake ~/.local/share/chezmoi/nix#uozumikouhei-mac
+
+# GitHubに保存
+cd ~/.local/share/chezmoi && git add -A && git commit -m "feat: add xxx" && git push
 ```
 
 ### macOS設定を変更する
