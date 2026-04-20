@@ -12,6 +12,7 @@
   # システムパッケージ（全ユーザー共通）
   environment.systemPackages = with pkgs; [
     git
+    zsh-syntax-highlighting
   ];
 
   # Homebrew管理（Caskアプリはここで管理）
