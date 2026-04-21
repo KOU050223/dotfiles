@@ -54,6 +54,7 @@
     starship
     zsh-syntax-highlighting
     chezmoi
+    lefthook
   ];
 
   # nixpkgsにないnpmグローバルパッケージ（nvmのv22で管理）
