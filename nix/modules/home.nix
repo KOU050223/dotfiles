@@ -57,9 +57,15 @@
     lefthook
   ];
 
-  # nixpkgsにないnpmグローバルパッケージ（nvmのv22で管理）
+  # nixpkgsにないツール（手動インストール）
   # 新しいマシンでは以下を実行:
+  #
+  # [npm global] nvmのv22で管理
   # npm install -g firebase-tools ccusage cloudflare-bulk-delete @qiita/qiita-cli cz-git czg @anthropic-ai/claude-code
+  #
+  # [curl install]
+  # curl -fsSL https://cli.coderabbit.ai/install.sh | sh  # → ~/.local/bin/coderabbit
+  # curl -fsSL https://claude.ai/install.sh | bash
 
   programs.home-manager.enable = true;
 
