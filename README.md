@@ -54,58 +54,52 @@ cat ~/.local/share/chezmoi/vscode-extensions.txt | xargs -I {} code --install-ex
 
 ## 日常的な使い方
 
+### システム・パッケージのアップデート
+
+今回追加したエイリアスを使用して、簡単にアップデートを行えます。
+
+- **全パッケージ・システムの更新 (flake.lockの更新を含む)**
+  ```bash
+  nix-up
+  ```
+- **設定ファイルの変更を反映するだけの場合**
+  ```bash
+  nix-sw
+  ```
+
 ### パッケージを追加・変更する
 
 **1. パッケージ名を調べる**
-
 ```bash
-nix search nixpkgs パッケージ名
+nix-search パッケージ名
+```
+または [search.nixos.org](https://search.nixos.org/packages) で検索。
+
+**2. 編集と反映**
+
+| 追加したいもの | 編集するファイル | 反映コマンド |
+|----------------|-----------------|--------------|
+| CLIツール（go, jq等） | `nix/modules/home.nix` | `nix-sw` |
+| macOS GUIアプリ | `nix/modules/darwin.nix` | `nix-sw` |
+| ドットファイル (.zshrc等) | `cze ~/.zshrc` | `cza` |
+
+**3. 特定のツール（例：gh）だけをアップデートしたい場合**
+Nixの性質上、個別にバージョンを指定するのではなく、`nixpkgs` 全体を更新するのが一般的です。
+```bash
+cd ~/.local/share/chezmoi/nix
+nix flake update nixpkgs
+nix-sw
 ```
 
-または https://search.nixos.org/packages で検索。
+### dotfiles (chezmoi) の管理
 
-**2. 何をどこに書くか**
+- **編集**: `cze ~/.zshrc`
+- **反映**: `cza`
+- **ローカルの変更をリポジトリに取り込む**: `chezmoi add <ファイルパス>`
+- **GitHubに保存**: `chezmoi cd && git add -A && git commit -m "update" && git push`
 
-| 追加したいもの | 編集するファイル | 書く場所 |
-|----------------|-----------------|----------|
-| CLIツール（go, gh, jq等） | `home.nix` | `home.packages` |
-| シェル設定・エイリアス | `home.nix` | `programs.zsh.initContent` |
-| macOS GUIアプリ | `darwin.nix` | `homebrew.casks` |
-| nixpkgsにないCLIツール | `darwin.nix` | `homebrew.brews` |
-
-**3. 適用してGitHubに保存**
-
-```bash
-# 適用
-sudo darwin-rebuild switch --flake ~/.local/share/chezmoi/nix#uozumikouhei-mac
-
-# GitHubに保存
-cd ~/.local/share/chezmoi && git add -A && git commit -m "feat: add xxx" && git push
-```
-
-### macOS設定を変更する
-
-`nix/modules/darwin.nix` を編集して適用（上記と同じコマンド）。
-
-### dotfiles を編集・同期する
-
-```bash
-# ファイルを編集
-chezmoi edit ~/.zshrc
-
-# 適用
-chezmoi apply
-
-# GitHubに同期
-chezmoi cd && git add -A && git commit -m "update" && git push
-```
-
-### リモートの変更を取り込む
-
-```bash
-chezmoi update
-sudo darwin-rebuild switch --flake ~/.local/share/chezmoi/nix#uozumikouhei-mac
-```
+> [!CAUTION]
+> `.agents/` などのディレクトリが外部ツールによって書き換えられ、`cza` 時に警告が出た場合は、まず `chezmoi add ~/.agents` を実行して「ローカルの状態を正」としてリポジトリに同期してから `apply` (overwrite) してください。
 
 ---
 

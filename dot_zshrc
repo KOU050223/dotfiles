@@ -42,6 +42,14 @@ alias gitprune="git fetch --prune && git branch -vv | grep ': gone]' | awk '{pri
 alias newtarm='newtab'
 alias dbx='devbox'
 
+# Nix / chezmoi
+alias nix-up='(cd ~/.local/share/chezmoi/nix && nix flake update && sudo darwin-rebuild switch --flake .#uozumikouhei-mac)'
+alias nix-sw='sudo darwin-rebuild switch --flake ~/.local/share/chezmoi/nix#uozumikouhei-mac'
+alias nix-search='nix search nixpkgs'
+alias cz='chezmoi'
+alias cza='chezmoi apply'
+alias cze='chezmoi edit'
+
 # completions
 fpath=(~/.zsh/completions $fpath)
 autoload -Uz compinit && compinit
