@@ -74,6 +74,7 @@
     settings = {
       user.name = "KOU050223";
       user.email = "kouhei20050223@icloud.com";
+      core.editor = "vim";
       core.autocrlf = "input";
       push.autoSetupRemote = true;
       ghq.root = "/Users/uozumikouhei/workspace";
